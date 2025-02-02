@@ -19,10 +19,11 @@ for dir in eds240-hw1-*; do
         cd "$dir" || continue
 
         # ensure the file exists
-        if [ -f "Part1_SS.qmd" ]; then # I named my file Part1_SS.qmd
-            # Add the file, commit, and push
+        if [ -f "Part1_SS.qmd" ]; then # I named my file Part1_SS.qmd, you will have to ensure your file with edits has the same name of a similar enough structure
+
+            # add the file to student github, commit, and push
             git add Part1_SS.qmd
-            git commit -m "Releasing HW #1 Part 1 grading feedback."
+            git commit -m "Releasing HW #1 Part 1 grading feedback." # this will need to be updated with a particular message relating to the assignment being graded
             git push origin main 2>/dev/null || git push origin master
         else
             echo "Part1_SS.qmd not found in $dir!"
