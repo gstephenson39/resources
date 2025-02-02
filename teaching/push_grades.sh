@@ -1,6 +1,9 @@
 #!/bin/bash
 
 # this script iterates through student repos to push just the file containing TA edits
+# you will need to update your base directory, structure of student directory naming, file name, and commit message
+
+
 # set the base directory
 BASE_DIR="/Users/grace/rprojects/EDS-240-class/hw1_grading"
 
